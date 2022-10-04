@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Laboratorio Calculadora</h1>
+
+    <main class="container">
+      <span> Introduce dos valores numéricos</span>
+      <div class="inputs">
+        <input type="number" id="input-num1"/>
+      </div>
+      <span>Selecciona una operación</span>
+      <div class="buttoms-calc">
+        <button id="buttom-add">+</button>
+        <button id="buttom-substract">-</button>
+        <button id="buttom-multiplication">x</button>
+        <button class="active" id="buttom-division">/</button>
+        <button id="buttom-total">=</button>
+        <button id="buttom-reload" onclick="location.reload()">Reiniciar</button>
+      </div>
+      <div class="result-container">
+        <span>El resultado es: </span>
+      <span id="result"></span>
+
+    </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

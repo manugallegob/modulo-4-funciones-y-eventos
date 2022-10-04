@@ -1,0 +1,70 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    background-color: rgb(220, 220, 220);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 8px;
+}
+
+select, input, button{
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+.row-spa > input{
+    height: auto;
+}
+
+button{
+    background-color: rgb(27, 125, 245);
+    font-size: 18px;
+    color: white;
+    border: 0;
+}
+
+button:hover{
+    background-color: rgb(0, 111, 246);
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.booking > span {
+    font-weight: bold;
+}
+
+.booking > span:nth-child(2) {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+

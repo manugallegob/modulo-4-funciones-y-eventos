@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Modulo 4 - Ejercicio de Reserva</title>
+  </head>
+  <body>
+    <h1>Modulo 4 - Ejercicio de Reserva</h1>
+    <div class="container">
+      <div class="container-form">
+        <h2>Formulario de reserva de hotel</h2>
+        <form id="form-booking" action="" method="" onsubmit="return false;">
+          <select name="select-room" id="select-room">
+            <option hidden selected value="empty">
+              -- Seleccione tipo de habitación --
+            </option>
+            <option value="standard">Standard</option>
+            <option value="junior">Junior Suite</option>
+            <option value="suite">Suite</option>
+          </select>
+          <div class="row-spa">
+            <input
+              type="checkbox"
+              id="spa1"
+              name="option1"
+              value="yesSpa"
+              checked="checked"
+            />
+            <label for="option1">Con SPA</label>
+          </div>
+          <select name="select-ocupation" id="select-ocupation">
+            <option hidden selected value="empty">
+              -- Seleccione tipo de ocupación --
+            </option>
+            <option value="individual">Individual</option>
+            <option value="doble">Doble</option>
+            <option value="triple">Triple</option>
+          </select>
+          <input
+            type="number"
+            id="number-night"
+            name="number-night"
+            min="1"
+            placeholder="Ingrese número de noches"
+          />
+          <input
+            type="number"
+            id="number-park"
+            name="number-park"
+            min="1"
+            placeholder="Ingrese número de noches de parking"
+          />
+          <button type="submit" id="button-calc">Calcular</button>
+        </form>
+        <section class="booking">
+          <span>El precio de su reserva es de:</span>
+          <span id="price-booking">?</span>
+        </section>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
